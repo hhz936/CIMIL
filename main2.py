@@ -167,10 +167,6 @@ def train(config=config):
 
 
 if __name__ == '__main__':
-
-    # config.datafolder = 'C:/Users/num4/Desktop/datapre/st-petersburg-incart-12-lead-arrhythmia-database-1.0.0/'
-    # config.datafolder = 'C:/Users/num4/Desktop/datapre/st-petersburg-incart-12-lead-arrhythmia-database-1.0.0/inter/'
-    config.datafolder = 'C:/Users/num4/Desktop/datapre/mit-bih-supraventricular-arrhythmia-database-1.0/'
-    # config.datafolder = 'C:/Users/num4/Desktop/datapre/mit-bih-supraventricular-arrhythmia-database-1.0/inter/'
+    config.datafolder = 'path/'
     config.seed = 24
     train(config)
