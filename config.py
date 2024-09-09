@@ -3,7 +3,7 @@ class Config():
     seed = 42
 
     # path
-    datafolder = 'C:/Users/num4/Desktop/datapre/mit-bih-supraventricular-arrhythmia-database-1.0/'
+    datafolder = 'path/'
     experiment = 'MITSupra'
     model_name = 'MYMODNet'
 
