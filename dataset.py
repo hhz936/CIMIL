@@ -41,29 +41,8 @@ class ECGDataset(Dataset):
 
 def load_datasets(datafolder=None):
 
-    if datafolder == 'C:/Users/num4/Desktop/datapre/st-petersburg-incart-12-lead-arrhythmia-database-1.0.0/inter/':
-        X_train1, X_train2, y_train, X_test1, X_test2, y_test = interSTpeter()
-        X_train2 = STPEtranstoimage(X_train2)
-        X_test2 = STPEtranstoimage(X_test2)
-        X_train2 = slicepatch(X_train2)
-        X_test2 = slicepatch(X_test2)
-
-    elif datafolder == 'C:/Users/num4/Desktop/datapre/st-petersburg-incart-12-lead-arrhythmia-database-1.0.0/':
-        X_train1, X_train2, y_train, X_test1, X_test2, y_test = STpeter()
-        X_train2 = STPEtranstoimage(X_train2)
-        X_test2 = STPEtranstoimage(X_test2)
-        X_train2 = slicepatch(X_train2)
-        X_test2 = slicepatch(X_test2)
-
-    elif datafolder == 'C:/Users/num4/Desktop/datapre/mit-bih-supraventricular-arrhythmia-database-1.0/':
+    if datafolder == 'path/':
         X_train1, X_train2, y_train, X_test1, X_test2, y_test = MITspra()
-        X_train2 = STPEtranstoimage(X_train2)
-        X_test2 = STPEtranstoimage(X_test2)
-        X_train2 = slicepatch(X_train2)
-        X_test2 = slicepatch(X_test2)
-
-    elif datafolder == 'C:/Users/num4/Desktop/datapre/mit-bih-supraventricular-arrhythmia-database-1.0/inter/':
-        X_train1, X_train2, y_train, X_test1, X_test2, y_test = interMitspra()
         X_train2 = STPEtranstoimage(X_train2)
         X_test2 = STPEtranstoimage(X_test2)
         X_train2 = slicepatch(X_train2)
